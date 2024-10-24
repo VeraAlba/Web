@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em; /* Tamaño del texto */
+    color: #faf0f0; /* Color del texto */
+    margin: 0; /* Elimina el margen por defecto */
+
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* MENU DESPLEGABLE */
+.menu-container {
+    position: absolute;
+    top: 0px; /* Ajusta según sea necesario */
+    left: 0; /* Empieza desde el borde izquierdo */
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    background-color: black; /* Color de fondo del menú */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 2; /* Asegúrate de que esté por encima del carrusel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor profundidad */
+}
+
+
+.menu-header {
+    padding: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el encabezado */
+}
+
+.menu-items {
+    display: none; /* Oculta el menú por defecto */
+}
+
+.menu-item {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Suaviza el cambio de color de fondo al pasar el mouse */
+    border-top: 2px solid white; /* Borde blanco en la parte superior */
+}
+
+.menu-item:last-child {
+    border-bottom: 2px solid white; /* Borde blanco en la parte inferior del último elemento */
+}
+
+/* Espaciado entre los ítems */
+.menu-item + .menu-item {
+    margin-top: 5px; /* Espacio entre los elementos */
+}
+
+/* Espaciado igual arriba y abajo */
+.menu-item {
+    padding-top: 15px; /* Espacio en la parte superior */
+    padding-bottom: 15px; /* Espacio en la parte inferior */
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0; /* Asegura que no haya margen */
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    width: 100%;
+    height: 100%; /* Altura del carrusel */
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+/* BOTON DE WHATSAPP */
+.button-container-1 {
+    position: fixed;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    right: 20px; /* Espacio desde la parte derecha */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Usamos flex para alinear verticalmente */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-end; /* Alinea los elementos al final */
+}
+
+.whatsapp-button, .other-button {
+    margin-bottom: 20px; /* Espacio entre los botones */
+    width: 80px; 
+    height: 80px; 
+}
+
+.other-button {
+    width: 80px; 
+    height: 80px; 
+    top: 0; /* Coloca el segundo icono en la parte superior del primero */
+    left: 0; /* Coloca el segundo icono a la izquierda del primero */
+}
+
+.whatsapp-icon, .other-icon {
+    width: 90px; /* Ajusta el ancho del ícono */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* TITULO */
+.title-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif; /* Fuente seleccionada */
+    font-size: 1.5em; /* Tamaño del texto */
+    color: #faf0f0; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para un efecto de profundidad */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+
+/* fondo de boton1.html */
+.fondo-panes {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('img/hogazas-img.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir toda la pantalla manteniendo la relación de aspecto */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: scroll; /* La imagen se desplaza con el contenido */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra el 100% del alto de la pantalla */
+    overflow: hidden; /* Evita el desbordamiento de contenido */
+}
+
+.fondo-panes {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('img/hogazas-img.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra el 100% del alto de la pantalla */
+}
+
+.fondo-panificado {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url("img/ciabattas-img.jpg"); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra el 100% del alto de la pantalla */
+}
+
+.fondo-prepizzas {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('img/prepizzas-img.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra el 100% del alto de la pantalla */
+}
+.fondo-focaccias {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('img/focaccias-img.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra el 100% del alto de la pantalla */
+}
+
+.button-container {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 15px 0; /* Separación vertical entre los botones */
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    border: 2px solid white; /* Borde negro de 2 píxeles */
+    border-radius: 5px;
+    width: 200px; /* Ancho fijo para que todos los botones tengan el mismo tamaño */
+    text-align: center;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.product-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #007bff;
+}
+.product-description {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}

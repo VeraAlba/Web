@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERA ALBA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-header" onclick="toggleMenu()">
+            <h1 style="margin: 0; color: white;">Menú</h1>
+        </div>
+        <div class="menu-items" id="menuItems" style="display: none;">      
+            <a href="boton1.html" class="menu-item">Panes de Masa Madre</a>
+            <a href="boton2.html" class="menu-item">Panificado</a>
+            <a href="boton3.html" class="menu-item">Prepizzas</a>
+            <a href="boton4.html" class="menu-item">Focacceria</a>
+            <a href="index.html" class="menu-item">Volver</a>
+        </div>
+    </div>
+    
+    <div class="carrusel">
+        <div class="imagenes">
+            <img src="css/img/hogazas-img.jpg" alt="Imagen 1">
+            <img src="css/img/1.png" alt="Imagen 2">
+            <img src="css/img/2.png" alt="Imagen 3">
+            <img src="css/img/3.png" alt="Imagen 4">
+            <img src="css/img/4.png" alt="Imagen 5">
+            <img src="css/img/5.png" alt="Imagen 6">
+            <img src="css/img/6.png" alt="Imagen 7">
+        </div>
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <script src="carrusel.js"></script>
+
+        <div class="button-container-1">
+            <a href="https://www.instagram.com/alba.madre/profilecard/?igsh=dzEwNGtwZnllaGN6" class="other-button">
+                <img src="css/img/vera-alba-icon.png" alt="Otro Icono" class="other-icon">
+            </a>
+    
+            <a href="https://wa.me/+5493464549463" class="whatsapp-button">
+                <img src="css/img/icon-whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
+    
+        </div>
+</body>
+</html>
